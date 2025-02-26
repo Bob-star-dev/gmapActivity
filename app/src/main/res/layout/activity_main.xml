@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/lightBackground"
-    tools:context=".MainActivity">
+    android:background="@drawable/bg"
+    tools:context=".MainActivity"
+    android:gravity="center">
 
-    <!-- Header Title -->
+
     <TextView
         android:id="@+id/headerTitle"
         android:layout_width="match_parent"
@@ -21,6 +22,16 @@
         android:textStyle="bold"
         android:paddingBottom="16dp" />
 
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:hint="Masukkan alamat"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,15 +40,6 @@
         app:cardCornerRadius="16dp"
         app:cardBackgroundColor="@color/white">
 
-        <EditText
-            android:id="@+id/editTextAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_background"
-            android:hint="Masukkan alamat"
-            android:padding="12dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/gray" />
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
@@ -55,7 +57,7 @@
         app:iconGravity="textStart"
         app:iconPadding="8dp" />
 
-    <!-- Footer Image -->
+
     <ImageView
         android:id="@+id/footerImage"
         android:layout_width="match_parent"
@@ -63,4 +65,5 @@
         android:layout_marginTop="24dp"
         android:contentDescription="Background illustration"
         android:scaleType="fitCenter" />
+
 </LinearLayout>
